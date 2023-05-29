@@ -4,7 +4,217 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Front End Development Portfolio" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Portfolio | Emil Bejmo</title>
+    <script
+      src="https://kit.fontawesome.com/b14d444cb1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- <a href="#" class="nav-logo">Three Put...</a> -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Studies</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <div>
+          <h1>Emil Bejmo Portfolio</h1>
+          <h2>
+            Front end development student at Noroff - School of technology and
+            digital media
+          </h2>
+          <p>
+            I really enjoy creating visually appealing and user-friendly
+            websites. I'm currently learning JavaScript to further expand my
+            programming skills.
+          </p>
+        </div>
+        <div class="media">
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </section>
+      <section class="about" id="section">
+        <div class="profile-img">
+          <img
+            src="img/profile.JPG"
+            alt="profile picture of the honor of the site"
+          />
+        </div>
+        <div class="about-sec">
+          <h3>about</h3>
+          <p>
+            Lorem ipsum dolor sit amet. Qui illo harum ut voluptas soluta vel
+            commodi explicabo nam vero eveniet ut dolor quis. Eum pariatur
+            dolores qui dolore quia qui sint sequi.
+          </p>
+          <p class="p-second">
+            Quo nulla quos aut inventore commodi rem quas dolorum est dolores
+            incidunt et voluptas aliquam cum dolorem nemo sed laudantium modi?
+            Ut minima atque qui laborum delectus nam voluptatem similique quo
+            quas voluptatum. Ut suscipit libero et porro nesciunt qui velit quam
+            qui illum maxime vel explicabo fuga eum dolores optio.
+          </p>
+          <p>
+            Etaliquid ratione ut molestias omnis est dolorum quis et quos
+            quisquam non neque temporibus ut quae officia. Et tenetur pariatur
+            sed voluptatem asperiores ut numquam facere.
+          </p>
+        </div>
+      </section>
+      <section class="projects" id="section">
+        <h3>projects</h3>
+        <div class="card-container">
+          <div class="card" data-name="p-1">
+            <div class="img-container">
+              <img src="img/img-placeholder.png" alt="image placeholder" />
+            </div>
+            <div class="card-info">
+              <h4>rainydays</h4>
+              <p>
+                E-commerce store project for school. Prototype in Adobe XD.
+                Front end with HTML & CSS.
+              </p>
+              <div class="tools">
+                <span>Adobe XD</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-name="p-2">
+            <div class="img-container">
+              <img src="img/img-placeholder.png" alt="image placeholder" />
+            </div>
+            <div class="card-info">
+              <h4>the community science museum</h4>
+              <p>HTML & CSS school project for a hypotetichal science museum</p>
+              <div class="tools">
+                <span>Adobe XD</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-name="p-3">
+            <div class="img-container">
+              <img src="img/img-placeholder.png" alt="image placeholder" />
+            </div>
+            <div class="card-info">
+              <h4>Three put...</h4>
+              <p>
+                Blog written with HTML & CSS school project. Back end headless
+                WP CMS
+              </p>
+              <div class="tools">
+                <span>Adobe XD</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-popup">
+          <div class="popup" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="img/img-placeholder.png" alt="" />
+            <div class="popup-info">
+              <h4>rainydays</h4>
+              <p class="intro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, eius ut amet aut quae vero asperiores iure molestias
+                accusamus quidem recusandae alias explicabo necessitatibus.
+              </p>
+              <p class="bread">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+                cum hic fuga, explicabo magnam natus nisi deleniti, commodi, eum
+                beatae quasi blanditiis ratione facere quia rerum ut quaerat
+                reprehenderit architecto.
+              </p>
+              <p>github <a href="#">repo</a></p>
+              <p>link to <a href="#">live site</a></p>
+            </div>
+          </div>
+          <div class="popup" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="img/img-placeholder.png" alt="" />
+            <div class="popup-info">
+              <h4>the community science museum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, eius ut amet aut quae vero asperiores iure molestias
+                accusamus quidem recusandae alias explicabo necessitatibus,
+                vitae soluta est sapiente cum inventore!
+              </p>
+              <p>github <a href="#">repo</a></p>
+              <p>link to <a href="#">live site</a></p>
+            </div>
+          </div>
+          <div class="popup" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="img/img-placeholder.png" alt="" />
+            <div class="popup-info">
+              <h4>Three put blog...</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, eius ut amet aut quae vero asperiores iure molestias
+                accusamus quidem recusandae alias explicabo necessitatibus,
+                vitae soluta est sapiente cum inventore!
+              </p>
+              <p>github <a href="#">repo</a></p>
+              <p>link to <a href="#">live site</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="studies" id="section">
+        <h3>Studies</h3>
+        <div class="school">
+          <p>2021 - Present</p>
+          <h4>Noroff - School of Technology and Digital Media</h4>
+          <p>Frontend Development</p>
+          <div class="border"></div>
+        </div>
+        <div class="school">
+          <p>2020 - 2021</p>
+          <h4>UX Design Institute</h4>
+          <p>Diploma in UX Design</p>
+          <div class="border"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js" type="module"></script>
+  </body>
 </html>
