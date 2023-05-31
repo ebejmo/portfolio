@@ -19,13 +19,13 @@
         <!-- <a href="#" class="nav-logo">Three Put...</a> -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Studies</a>
+            <a href="#studies" class="nav-link">Studies</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -40,7 +40,7 @@
         <div>
           <h1>Emil Bejmo Portfolio</h1>
           <h2>
-            Front end development student at Noroff - School of technology and
+            Frontend development student at Noroff - School of technology and
             digital media
           </h2>
           <p>
@@ -50,18 +50,31 @@
           </p>
         </div>
         <div class="media">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/emil-bejmo-032854148">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/ebejmo">
             <i class="fab fa-github"></i>
           </a>
-          <a href="#">
+          <a href="" id="mail-icon">
             <i class="fas fa-envelope"></i>
           </a>
+
+          <div id="pop-up" class="hidden">
+            <h2>Compose Email</h2>
+            <form id="email-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+              <label for="message">Message:</label>
+              <textarea id="message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
         </div>
       </section>
-      <section class="about" id="section">
+      <section class="about section" id="about">
         <div class="profile-img">
           <img
             src="img/profile.JPG"
@@ -89,7 +102,7 @@
           </p>
         </div>
       </section>
-      <section class="projects" id="section">
+      <section class="projects section" id="projects">
         <h3>projects</h3>
         <div class="card-container">
           <div class="card" data-name="p-1">
@@ -199,7 +212,7 @@
           </div>
         </div>
       </section>
-      <section class="studies" id="section">
+      <section class="studies section" id="studies">
         <h3>Studies</h3>
         <div class="school">
           <p>2021 - Present</p>

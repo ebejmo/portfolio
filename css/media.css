@@ -1,6 +1,7 @@
 @media (max-width: 700px) {
   .hamburger {
     display: block;
+    margin: 0;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -13,16 +14,18 @@
   }
 
   .nav-menu {
+    display: flex;
     position: fixed;
     left: -100%;
-    top: 40px;
+    top: 10px;
     gap: 0;
     flex-direction: row;
     /* background-color: rgb(7, 4, 30); */
-    width: 100%;
+    width: 80%;
     text-align: center;
     transition: 0.3s;
     padding: 0 10px;
+    margin-left: 60px;
   }
 
   .nav-item {
@@ -37,5 +40,23 @@
 @media (min-width: 700px) {
   .card {
     max-width: 300px;
+    width: 250px;
+  }
+  .img-container {
+    height: 200px;
+  }
+  .profile-img {
+    height: 140px;
+    width: 140px;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 800px) {
+  .img-container {
+    height: 240px;
   }
 }
