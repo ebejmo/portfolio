@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .hamburger {
     display: block;
     margin: 0;
@@ -37,10 +37,15 @@
   }
 }
 
+@media (min-width: 389px) {
+  .card img {
+    object-fit: cover;
+  }
+}
+
 @media (min-width: 700px) {
   .card {
     max-width: 300px;
-    width: 250px;
   }
   .img-container {
     height: 200px;
@@ -51,12 +56,15 @@
   }
   .card-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 800px) {
   .img-container {
     height: 240px;
+  }
+  .card {
+    max-width: 350px;
   }
 }

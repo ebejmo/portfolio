@@ -38,36 +38,39 @@ popupCards.forEach((close) => {
   };
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-  var mailIcon = document.getElementById("mail-icon");
-  var popup = document.getElementById("pop-up");
-  var nameInput = document.getElementById("name");
-  var emailInput = document.getElementById("email");
-  var messageInput = document.getElementById("message");
-  var emailForm = document.getElementById("email-form");
+document.addEventListener("DOMContentLoaded", () => {
+  const mailIcon = document.getElementById("mail-icon");
+  const popup = document.querySelector(".mails-popup");
+  let pp = document.querySelector(".mail-popup");
+  const closeIcon = document.querySelector(".fa-times");
+  const emailForm = document.getElementById("email-form");
 
-  mailIcon.addEventListener("click", function (event) {
-    event.preventDefault();
-    popup.classList.remove("hidden");
+  mailIcon.addEventListener("click", () => {
+    popup.style.display = "flex";
+    pp.classList.add("active");
+    document.body.style.overflow = "hidden";
   });
 
-  emailForm.addEventListener("submit", function (event) {
+  closeIcon.addEventListener("click", () => {
+    popup.style.display = "none";
+    document.body.style.overflow = "auto";
+    closeIcon.classList.remove("active");
+  });
+
+  emailForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    var name = nameInput.value;
-    var email = emailInput.value;
-    var message = messageInput.value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    var recipient = "bejmoemil@gmail.com";
-    var subject = "Email from " + name;
-    var body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
-    var mailtoLink =
-      "mailto:" +
-      recipient +
-      "?subject=" +
-      encodeURIComponent(subject) +
-      "&body=" +
-      encodeURIComponent(body);
+    // Send email using the specified email address
+    const mailtoLink = `mailto:bejmoemil@gmail.com?subject=Contact%20&body=Name:%20${encodeURIComponent(
+      name
+    )}%0AEmail:%20${encodeURIComponent(
+      email
+    )}%0AMessage:%20${encodeURIComponent(message)}`;
 
+    // Open user's email client with the composed email
     window.location.href = mailtoLink;
   });
 });

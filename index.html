@@ -56,21 +56,26 @@
           <a href="https://github.com/ebejmo">
             <i class="fab fa-github"></i>
           </a>
-          <a href="" id="mail-icon">
+          <div href="#" id="mail-icon" class="mail-icon" data-name="p-4">
             <i class="fas fa-envelope"></i>
-          </a>
+          </div>
+        </div>
 
-          <div id="pop-up" class="hidden">
-            <h2>Compose Email</h2>
-            <form id="email-form">
-              <label for="name">Name:</label>
-              <input type="text" id="name" required />
-              <label for="email">Email:</label>
-              <input type="email" id="email" required />
-              <label for="message">Message:</label>
-              <textarea id="message" required></textarea>
-              <button type="submit">Send</button>
-            </form>
+        <div class="mails-popup">
+          <div class="mail-popup" data-name="p-4">
+            <i id="close-icon" class="fas fa-times"></i>
+            <div class="form-container">
+              <h2>Contact</h2>
+              <form id="email-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" required rows="8"></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -78,27 +83,30 @@
         <div class="profile-img">
           <img
             src="img/profile.JPG"
-            alt="profile picture of the honor of the site"
+            alt="profile picture of the the creator of this site"
           />
         </div>
         <div class="about-sec">
           <h3>about</h3>
           <p>
-            Lorem ipsum dolor sit amet. Qui illo harum ut voluptas soluta vel
-            commodi explicabo nam vero eveniet ut dolor quis. Eum pariatur
-            dolores qui dolore quia qui sint sequi.
+            My name is Emil Bejmo, and I am a front-end development student at
+            Noroff. I am passionate about creating user-friendly and visually
+            appealing applications. As I continue to learn more and more about
+            the field, my goal is to enhance my skills and become proficient in
+            my craft.
           </p>
           <p class="p-second">
-            Quo nulla quos aut inventore commodi rem quas dolorum est dolores
-            incidunt et voluptas aliquam cum dolorem nemo sed laudantium modi?
-            Ut minima atque qui laborum delectus nam voluptatem similique quo
-            quas voluptatum. Ut suscipit libero et porro nesciunt qui velit quam
-            qui illum maxime vel explicabo fuga eum dolores optio.
+            Apart from school work, I have also been playing professional hockey
+            since the age of 18, which amounts to 15 years of experience on the
+            ice. It has taught me discipline, teamwork, and the importance of
+            dedication.
           </p>
           <p>
-            Etaliquid ratione ut molestias omnis est dolorum quis et quos
-            quisquam non neque temporibus ut quae officia. Et tenetur pariatur
-            sed voluptatem asperiores ut numquam facere.
+            As I pursue my education, my primary objective is to absorb as much
+            knowledge as possible in order to secure a rewarding front-end
+            position in the future. In addition to my academic and sporting
+            endeavors, I am also a proud father to a newborn daughter. During my
+            free time, I enjoy playing golf.
           </p>
         </div>
       </section>
@@ -107,13 +115,17 @@
         <div class="card-container">
           <div class="card" data-name="p-1">
             <div class="img-container">
-              <img src="img/img-placeholder.png" alt="image placeholder" />
+              <img
+                src="img/tp-img.jpg"
+                alt="screenshot of the three put blog running on diffrent devices"
+              />
             </div>
             <div class="card-info">
-              <h4>rainydays</h4>
+              <h4>Three put...</h4>
               <p>
-                E-commerce store project for school. Prototype in Adobe XD.
-                Front end with HTML & CSS.
+                Second year project exam and my latest work. Blog written with
+                HTML & CSS and JavaScript for interactivity. Headless WordPress
+                backend for content management.
               </p>
               <div class="tools">
                 <span>Adobe XD</span>
@@ -126,11 +138,17 @@
           </div>
           <div class="card" data-name="p-2">
             <div class="img-container">
-              <img src="img/img-placeholder.png" alt="image placeholder" />
+              <img
+                src="img/tcsm.jpg"
+                alt="screenshot of the community science museum site"
+              />
             </div>
             <div class="card-info">
               <h4>the community science museum</h4>
-              <p>HTML & CSS school project for a hypotetichal science museum</p>
+              <p>
+                First year Semester Project. Science museum site built with HTML
+                and CSS. Protoype in Adobe XD.
+              </p>
               <div class="tools">
                 <span>Adobe XD</span>
                 <span>HTML</span>
@@ -140,13 +158,14 @@
           </div>
           <div class="card" data-name="p-3">
             <div class="img-container">
-              <img src="img/img-placeholder.png" alt="image placeholder" />
+              <img src="img/rdays.jpg" alt="screenshot of rainydays homepage" />
             </div>
             <div class="card-info">
-              <h4>Three put...</h4>
+              <h4>rainydays</h4>
               <p>
-                Blog written with HTML & CSS school project. Back end headless
-                WP CMS
+                E-commerce store project for school. Prototype in Adobe XD.
+                Frontend with HTML & CSS. Managing content and fetching store
+                products with WordPress REST API.
               </p>
               <div class="tools">
                 <span>Adobe XD</span>
@@ -162,52 +181,92 @@
         <div class="cards-popup">
           <div class="popup" data-target="p-1">
             <i class="fas fa-times"></i>
-            <img src="img/img-placeholder.png" alt="" />
+            <img src="img/tp-img.jpg" alt="" />
             <div class="popup-info">
-              <h4>rainydays</h4>
-              <p class="intro">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius ut amet aut quae vero asperiores iure molestias
-                accusamus quidem recusandae alias explicabo necessitatibus.
+              <h4>Three put blog...</h4>
+              <p>
+                The task for this project was to create a blog site, design and
+                topics on the blog was chosen by myself. Content is fetched from
+                a headless WordPress CMS and pages are dynamically created based
+                on what link the user has clicked.
               </p>
-              <p class="bread">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-                cum hic fuga, explicabo magnam natus nisi deleniti, commodi, eum
-                beatae quasi blanditiis ratione facere quia rerum ut quaerat
-                reprehenderit architecto.
+              <p>
+                Is the content on the site amazing? Absolutely not. But the site
+                is looks good on diffrent screen sizes and is inutivie and user
+                friendly. On the homepage there is a sweet carousel that
+                displays all the blogposts and on the blog page there is a "Show
+                More" button that does what it supposed to do. Since I am just
+                getting strated with learning JavaScript this project was by far
+                the most challenging to date but also where I have learned the
+                most.
               </p>
-              <p>github <a href="#">repo</a></p>
-              <p>link to <a href="#">live site</a></p>
+              <div class="links">
+                <a
+                  class="link"
+                  href="https://ecstatic-swanson-bb49f2.netlify.app/"
+                  >Visit Site</a
+                >
+                <a
+                  class="link"
+                  href="https://github.com/Noroff-FEU-Assignments/cross-course-project-ebejmo"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
           <div class="popup" data-target="p-2">
             <i class="fas fa-times"></i>
-            <img src="img/img-placeholder.png" alt="" />
+            <img
+              src="img/tcsm.jpg"
+              alt="screenshot of the community science museum site"
+            />
             <div class="popup-info">
               <h4>the community science museum</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius ut amet aut quae vero asperiores iure molestias
-                accusamus quidem recusandae alias explicabo necessitatibus,
-                vitae soluta est sapiente cum inventore!
+                Semester projects for the first semester. The goal was to design
+                a prototype and later build a site for a science museum that
+                would appeal to its target audience, middle school children and
+                its parents. The site is user friendly, responsive and easy to
+                navigate on a variety of devices.
               </p>
-              <p>github <a href="#">repo</a></p>
-              <p>link to <a href="#">live site</a></p>
+              <div class="links">
+                <a
+                  class="link"
+                  href="https://starlit-khapse-46fd0f.netlify.app/"
+                  >Visit Site</a
+                >
+                <a class="link" href="https://github.com/ebejmo/tcsm/tree/main"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
           <div class="popup" data-target="p-3">
             <i class="fas fa-times"></i>
-            <img src="img/img-placeholder.png" alt="" />
+            <img src="img/rdays.jpg" alt="screenshot of rainydays homepage" />
             <div class="popup-info">
-              <h4>Three put blog...</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius ut amet aut quae vero asperiores iure molestias
-                accusamus quidem recusandae alias explicabo necessitatibus,
-                vitae soluta est sapiente cum inventore!
+              <h4>rainydays</h4>
+              <p class="intro">
+                This project started with designing a prototype in Adobe XD for
+                a clothing company that sells rain jackets online. Over time I
+                have built upon the project, taking the prototype to a live site
+                on the web built with basic HTML and CSS to dynamically create
+                pages with JavaScript. Content managment and fetch products with
+                WordPress REST API. Currently the site is under construction
+                where it lacks a working 'add to cart' function.
               </p>
-              <p>github <a href="#">repo</a></p>
-              <p>link to <a href="#">live site</a></p>
+              <div class="links">
+                <a
+                  class="link"
+                  href="https://ecstatic-swanson-bb49f2.netlify.app/"
+                  >Visit Site</a
+                >
+                <a
+                  class="link"
+                  href="https://github.com/Noroff-FEU-Assignments/cross-course-project-ebejmo"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
         </div>
