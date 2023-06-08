@@ -296,6 +296,10 @@ i:hover {
   color: rgb(7, 4, 30);
 }
 
+.card:hover .more {
+  color: rgb(7, 4, 30);
+}
+
 .img-container {
   height: 240px;
   overflow: hidden;
@@ -321,21 +325,31 @@ i:hover {
   line-height: 1.4;
 }
 
+.more {
+  font-weight: 500;
+  color: rgb(103, 100, 125);
+  text-decoration: underline;
+  transition: 0.4s ease;
+}
+
 .card-info .tools {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.8rem;
 }
 .tools {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 .tools span {
+  display: flex;
   background-color: rgb(206, 202, 240);
   color: rgb(7, 4, 30);
-  border-radius: 5px;
-  margin: 8px 12px 8px 0;
+  border: 0.1rem solid rgb(7, 4, 30);
+  border-radius: 1rem;
   padding: 0.5rem;
   gap: 12px;
+  font-size: 0.87rem;
 }
 
 .card h4 {
@@ -401,11 +415,17 @@ i:hover {
   color: rgb(103, 100, 125);
 }
 
+.bg {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
+}
+
 .popup p {
-  padding: 1rem 0;
+  padding: 1rem;
   color: rgb(7, 4, 30);
   text-align: left;
   line-height: 1.4;
+  background-color: rgb(255, 255, 255);
 }
 
 .popup .bread {
@@ -415,23 +435,23 @@ i:hover {
 
 .links {
   display: flex;
-  width: 80%;
   justify-content: space-around;
   margin: 20px auto;
 }
 
 .link {
-  background-color: rgb(255, 255, 255);
-  padding: 0.7rem;
-  color: rgb(103, 100, 125);
-  text-decoration: underline;
-  font-size: 18px;
+  color: rgb(7, 4, 30);
+  border: 0.1rem solid rgb(7, 4, 30);
   border-radius: 5px;
+  padding: 0.7rem;
+  text-decoration: underline;
+  font-size: 16px;
   transition: 0.4s ease;
 }
 
 .link:hover {
-  color: rgb(7, 4, 30);
+  color: rgb(103, 100, 125);
+  border: 0.1rem solid rgb(103, 100, 125);
 }
 
 /* STUDIES */
