@@ -440,18 +440,21 @@ i:hover {
 }
 
 .link {
-  color: rgb(7, 4, 30);
-  border: 0.1rem solid rgb(7, 4, 30);
+  color: rgb(103, 100, 125);
+  border-bottom: 0.1rem solid rgb(103, 100, 125);
+  /* border: 0.1rem solid rgb(7, 4, 30);
   border-radius: 5px;
-  padding: 0.7rem;
-  text-decoration: underline;
+  padding: 0.7rem; */
+  /* text-decoration: underline; */
   font-size: 16px;
+  font-weight: 500;
   transition: 0.4s ease;
 }
 
 .link:hover {
-  color: rgb(103, 100, 125);
-  border: 0.1rem solid rgb(103, 100, 125);
+  color: rgb(7, 4, 30);
+  border-bottom: 0.1rem solid rgb(103, 100, 125);
+  /* border: 0.1rem solid rgb(103, 100, 125); */
 }
 
 /* STUDIES */
